@@ -340,5 +340,8 @@ img {
         font-size: 30px;
         margin: 0px 0px 0 100px;
     }
+    .header__profile img {
+        display: none;
+    }
 }
 /*==================== Responsive Desing Emd ====================*/
