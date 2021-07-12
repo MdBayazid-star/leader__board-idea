@@ -1,0 +1,256 @@
+/*========================= - Root CSS - =========================*/
+    :root {
+        /*========================= - Font Family - =========================*/
+        --text-Poppins: 'Poppins', sans-serif;
+        --text-Roboto: 'Roboto', sans-serif;
+        /*========================= - Font Size - =========================*/
+        --smaller-font-size: 16px;
+        --small-font-size: 18px;
+        --medium-font-size: 20px;
+        --big-font-size: 24px;
+        --bigest-font-size: ;
+        /*========================= - Font Color - =========================*/
+        --text-blue-color: #562EFF;
+        --text-gray-color: #9F9F9F;
+        --text-light_gray-color: #A2A2A2;
+        --text-red-color: #ED6B4F;
+        --text-white-color: #FFFFFF;
+        --text-gold-color: #FFC014;
+        /*========================= - Font Weight - =========================*/
+        --font-normal: 400;
+        --font-medium: 500;
+        --font-biger: 600;
+        /*========================= - Background Color - =========================*/
+        --background-light_blue-color: #F3F1FF;
+        --background-blue-color: #562EFF;
+        --background-White-color: #FFFFFF;
+    }
+/*========================= - Bace CSS - =========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--text-Poppins);
+    font-weight: var(--font-medium);
+    background: var(--background-light_blue-color);
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+/*==================== REUSABLE CSS CLASSES ====================*/
+.top__section-title {
+    color: var(--text-blue-color);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-medium);
+}
+.main {
+    display: grid;
+    justify-content: center;
+}
+.container {
+    width: 870px;
+    background: var(--background-White-color);
+    margin-top: 35px;
+    padding: 45px 0px 0 30px;
+    border-radius: 10px;
+    /* margin-bottom: 50px; */
+}
+/*==================== Header Start ====================*/
+.header {
+    background: var(--background-blue-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+}
+.header__logo a {
+    display: flex;
+    align-items: center;
+}
+.header__logo a img {
+    width: 40px;
+    margin-right: 30px;
+}
+.header__logo a span {
+    width: 54px;
+    font-size: 24px;
+    color: var(--text-white-color);
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+.navigation ul li {
+    display: inline-block;
+}
+.navigation ul li a {
+    display: block;
+    color: var(--text-white-color);
+    padding: 0 35px;
+    font-weight: 300;
+}
+/*==================== Header End ====================*/
+/*==================== Top Section Start ====================*/
+.toper
+ {
+    margin-top: 120px;
+ }
+    /*==================== Top Player Start ====================*/
+    .top__section-players {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom: 45px;
+    }
+    .top__section-title h2 {
+        margin-bottom: 10px;
+        font-weight: var(--font-medium);
+        font-size: var(--big-font-size);
+    }
+    .player {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .player img {
+        width: 55px;
+        height: 55px;
+        margin-right: 15px;
+    }
+    .player h3 {
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+    }
+    hr {
+        border: 1px solid #D1D1D1;
+        margin-bottom: 30px;
+    }
+    /*==================== Top Player End ====================*/
+    /*==================== Top Blog Start ====================*/
+    .top__section-blogs {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+    .blog {
+        display: flex;
+        margin: 25px 0;
+    }
+    .blog img {
+        width: 177px;
+        height: 117px;
+        margin-right: 15px;
+    }
+    .blog a h3 {
+        margin-bottom: 5px;
+        color: #000000;
+        font-size: var(--medium-font-size);
+        font-weight: var(--font-medium);
+    }
+    .blog a p {
+        color: var(--text-gray-color);
+    }
+    .blog a p span {
+        color: var(--text-blue-color);
+    }
+    /*==================== Top Blog Start ====================*/
+/*==================== Top Section End ====================*/
+/*==================== Course Section Start ====================*/
+.course__section {
+    margin-bottom: 50px;
+}
+.lates__courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    margin-bottom: 25px;
+}
+.course {
+    padding: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.course img {
+    width: 225px;
+    height: 105px;
+    margin-bottom: 20px;
+}
+
+.course a h3 {
+    font-size: var(--medium-font-size);
+    color: #000;
+    font-weight: var(--font-medium);
+    font-family: var(--text-Roboto);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.course a span {
+    font-size: var(--small-font-size);
+    color: var(--text-red-color);
+    font-weight: var(--font-normal);
+    font-family: var(--text-Roboto);
+}
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+.star__icon {
+    margin-right: 10px;
+}
+.star__icon span i {
+    font-size: 12px;
+    color: var(--text-gold-color);
+}
+.star__icon span i.empty {
+    color: var(--text-gray-color);
+    opacity: 0.4;
+}
+.star__icon span small {
+    color: var(--text-light_gray-color);
+    font-size: 15px;
+    font-weight: var(--font-normal);
+}
+.time__icon {
+    background: #FFE4E8;
+    padding: 0 5px;
+    border-radius: 15px;
+} 
+.star__icon span, 
+.time__icon span {
+    white-space: nowrap;
+}
+.time__icon span {
+    color: #FF4A60;
+}
+.time__icon span i {
+    margin-right: 4px;
+}
+/*==================== Course Section End ====================*/
+/*==================== Footer Start ====================*/
+.footer {
+    text-align: center;
+    width: 100%;
+    color: var(--text-white-color);
+    padding: 20px;
+    background: var(--background-blue-color);
+}
+/*==================== Footer End ====================*/
+/*==================== Responsive Desing Start ====================*/
+
+/*==================== Responsive Desing Emd ====================*/
