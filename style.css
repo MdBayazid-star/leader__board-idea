@@ -337,7 +337,8 @@ img {
     .navbar-toggle i {
         position: relative;
         color: #FFF;
-        margin: 0px 0px 0 110px;
+        font-size: 30px;
+        margin: 0px 0px 0 100px;
     }
 }
 /*==================== Responsive Desing Emd ====================*/
